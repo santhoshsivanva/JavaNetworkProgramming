@@ -1,0 +1,42 @@
+# OSI model
+Application  #Application Protocols
+Presentation #Encryption Decryption
+Session      #Duration of execution and Download
+Transport    #Connection oriented or Connection less
+Network      #Routing /IP
+Datalink     #Switch ,hub
+Physical     #Modulation
+
+# TCP/IP model
+Application (Presentation+Session)
+Transport 
+Network
+Network Access Layer (Datalink + Physical)
+
+#Each sevice are identified by port number..
+
+#Client Side
+Socket st = ip,port
+inputStream (read)
+OutputStream (write)
+
+#Server Side
+ServerSocket ss = same_ip
+Socket st = ss.accept();
+OutputStream (write)
+InputStream (read)
+
+#Client Side UserDatagramSocket
+#DatagramSocket(Port);
+#DatagramPacket(String.getBytes(),bytes.length,ipaddress,port);
+#Send()
+#ds.send(DP);
+
+#Receive()
+#Under receive method
+#byte[] arr = byte[65300];
+#Dp = new DatagramPacket(arr, 1024);
+#ds.receive(Dp);
+
+#Server Side UserDatagramSocket
+#DatagramSocket(Port);

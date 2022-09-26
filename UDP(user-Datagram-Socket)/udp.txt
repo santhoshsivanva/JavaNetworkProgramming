@@ -1,0 +1,8 @@
+UDP(User Datagram Protocol) uses the unidirection data processing.
+That is the reason for using this on streaming purposes.
+UDP is not reliable when compared to the TCP Protocol.
+
+DatagramSocket to communicate over UDP instead of TCP. It is also built on top of IP. DatagramSockets can be 
+used to both send and receive packets over the Internet.
+
+In Normal Game-Streaming apps they use the TCP for Critical data and UDP for rest of the data.
